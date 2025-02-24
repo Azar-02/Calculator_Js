@@ -9,3 +9,12 @@ function appendValue(value){
 function clearDisplay(){
     display.value = '';
 }
+
+// Calculate the result
+function calculateResult(){
+    try{
+        display.value = eval(display.value);
+    } catch(e){
+        display.value = 'Error';
+    }
+}
